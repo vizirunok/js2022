@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
+        let elements= [525, 675, 1001, 'Lesia', 'Andrew', 'Skill', {name: 'Anton', age: 22, idCard: 'yes'}, true, false, ['Ukraine', 'Poland', 'England', {name: 'Gora', age: 100}]];
+        console.log(elements);
+        console.log(elements[0]);
+        console.log(elements[1]);
+        console.log(elements[2]);
+        console.log(elements[3]);
+        console.log(elements[4]);
+        console.log(elements[5]);
+        console.log(elements[6]);
+        console.log(elements[7]);
+        console.log(elements[8]);
+        console.log(elements[9]);
+        let numberCorrect = (elements[0]);
+        console.log(numberCorrect);
+
+        let AntonAge = (elements[6]['age']);
+        console.log(AntonAge);
+
+        let AntonName = (elements[6].name);
+        console.log(AntonName);
+
+        console.log(elements[9][1]);
+        console.log(elements[9][0]);
+
+        console.log(elements[9][3]['age']);
+
+        // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre. Поле "автори" - масив. Кожен автор має поля name,age
+        let firstBook = {
+            title: 'My Kampf',
+            pageCount: 250,
+            genre: 'War',
+            authors: [
+                {name: 'Julian', age: 22},
+                {name: 'Clara', age: 27}
+            ]
+        };
+        console.log(firstBook.authors[0].name);
+        console.log(firstBook.authors[1]['age']);
+
+        let secondBook = {
+            title: 'Sex&Rock',
+            pageCount: 1001,
+            genre: 'About Sex',
+            authors: [
+                {name: 'Calvin klein', age: 33, location: 'London'},
+                {name: 'Rocky', age: 75, auto: 'Buick'}
+            ]
+        };
+        let thirdBook = {
+            title: 'Sweet Home',
+            pageCount: 525,
+            genre: 'Countries',
+            authors: [
+                {name: 'David', age: 25},
+                {name: 'Adidas', age: 2}
+            ]
+        };
+
+        // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+        let users = [
+            {name: 'Josh', username: 'drink', password: '152Andres'},
+            {name: 'Green', username: 'Colaps', password: '54789'},
+            {name: 'Drake', username: 'maalito', password: 'tabak58'},
+            {name: 'Growl', username: 'dontFuckMyBrain', password: 'holleywood'},
+            {name: 'Lesia', username: 'hanuka', password: 'meetwith5'}
+        ];
+
+        console.log(users[0].password);
+        console.log(users[1]['password']);
+        console.log(users[2].password);
+        console.log(users[3]['password']);
+        console.log(users[4].password);
+
+    </script>
+</body>
+</html>
