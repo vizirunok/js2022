@@ -1,0 +1,10 @@
+.product-card {
+    width: 250px;
+}
+.product-title {
+    color: yellowgreen;
+    font-family: "Yu Gothic UI Light", sans-serif;
+}
+.product-image {
+    width: 100%;
+}
