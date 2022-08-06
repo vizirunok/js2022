@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // --створити масив з:
+    //     - з 5 числових значень
+    // const array1 = [52, 25, 87, 69, 31];
+    // - з 5 стічкових значень
+    // const array2 = ['yo', 'bro', 'hallo', 'thanks', 'car'];
+    // - з 5 значень стрічкового, числового та булевого типу
+    // const array3 = [52, 25, 87, 69, 31, 'yo', 'bro', 'hallo', 'thanks', 'car', false, true, true, false, false];
+    // - та вивести його в консоль
+    // console.log(array3);
+    // -- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
+    // let array4 = [];
+    // array4[25] = true;
+    // array4[1] = 52;
+    // array4[5] = 'brother';
+    // console.log(array4);
+    // - є масив [2,17,13,6,22,31,45,66,100,-18] :
+    // let array6 = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
+    // 1. перебрати його циклом while
+    // let q = 0;
+    // while (q < array6.length) {
+    //     console.log(array6[q]);
+    //     q++;
+    // }
+    //     2. перебрати його циклом for
+    // for (let arr of array6) {
+    //     console.log(arr);
+    // }
+    // 3. перебрати циклом while та вивести  числа тільки з непарним індексом
+    // let w = 0;
+    // while (w < array6.length) {
+    //     if (w % 2 !== 0) {
+    //         console.log(`${w} ${array6[w]}`);
+    //     }
+    //     w++;
+    // }
+    // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
+    // for (let f = 0; f < array6.length; f++) {
+    //     if (f % 2 !== 0) {
+    //         console.log(`${f} ${array6[f]}`);
+    //     }
+    // }
+    // 5. перебрати циклом while та вивести  числа тільки парні  значення
+    // let g = 0;
+    // while (g < array6.length) {
+    //     if (array6[g] % 2 == 0) {
+    //         console.log(array6[g]);
+    //     }
+    //     g++;
+    // }
+    // 6. перебрати циклом for та вивести  числа тільки парні  значення
+    // for (let j = 0; j < array6.length; j++) {
+    //     if (array6[j] % 2 === 0) {
+    //         console.log(array6[j]);
+    //     }
+    // }
+    // 7. замінити кожне число кратне 3 на слово "okten"
+    // let l = 0;
+    // while (l < array6.length) {
+    //     if (array6[l] % 3 === 0) {
+    //         array6[l] = 'okten';
+    //         console.log(`${l} ${array6[l]}`);
+    //     }
+    //     l++;
+    // }
+    // 8. вивести масив в зворотньому порядку.
+    // for (let k = array6.length - 1; k >= 0; k--) {
+    //     console.log(array6[k]);
+    // }
+    // 9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)
+    // 9.1. перебрати його циклом while
+    // let q = array6.length - 1;
+    // while (q >= 0) {
+    //     console.log(array6[q]);
+    //     q--;
+    // }
+    //  9.2. перебрати його циклом for
+// по звичайному for, неможливо в реверсному порядку
+//     for (let arr of array6) {
+//         console.log(arr);
+//     }
+    // 9.3. перебрати циклом while та вивести  числа тільки з непарним індексом
+    // let w = array6.length - 1;
+    // while (w >= 0) {
+    //     if (w % 2 !== 0) {
+    //         console.log(`${w} ${array6[w]}`);
+    //     }
+    //     w--;
+    // }
+    // 9.4. перебрати циклом for та вивести  числа тільки з непарним індексом
+    // for (let f = array6.length - 1; f >= 0; f--) {
+    //     if (f % 2 !== 0) {
+    //         console.log(`${f} ${array6[f]}`);
+    //     }
+    // }
+    // 9.5. перебрати циклом while та вивести  числа тільки парні  значення
+    // let g = array6.length - 1;
+    // while (g >= 0) {
+    //     if (array6[g] % 2 === 0) {
+    //         console.log(array6[g]);
+    //     }
+    //     g--;
+    // }
+    // 9.6. перебрати циклом for та вивести  числа тільки парні  значення
+    // for (let j = array6.length - 1; j >= 0; j--) {
+    //     if (array6[j] % 2 === 0) {
+    //         console.log(array6[j]);
+    //     }
+    // }
+    // 7. замінити кожне число кратне 3 на слово "okten"
+    // let l = array6.length - 1;
+    // while (l >= 0) {
+    //     if (array6[l] % 3 === 0) {
+    //         array6[l] = 'okten';
+    //         console.log(`${l} ${array6[l]}`);
+    //     }
+    //     l--;
+    // }
+    // - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+    // let apple = [0, 12, 58, 62, 78, 25, 87, 32, 69, 87];
+    // for (const number of apple) {
+    //     console.log(number);
+    // }
+    // - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
+    // let auto = ['skoda', 'porshe', 'bmw', 'audi', 'mercedes', 'seat', 'volkswagen', 'bentley', 'zaz', 'honda'];
+    // for (const string of auto) {
+    //     console.log(string);
+    // }
+    // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+    // let numbStrBol = [0, 12, 58, 62, 78, 'skoda', 'porshe', 'bmw', 'audi', 'mercedes', false, true];
+    // for (const numbStrBolElement of numbStrBol) {
+    //     console.log(numbStrBolElement);
+    // }
+    // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
+    // let all = [0, 12, 58, 62, 78, 'skoda', 'porshe', 'bmw', 'audi', 'mercedes', false, true];
+    // let c = 0;
+    // while (c < all.length) {
+    //     if (typeof all[c] === "boolean") {
+    //         console.log(all[c]);
+    //     }
+    //     c++;
+    // }
+    // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
+    // let numStrBl = [0, 12, 58, 62, 78, 'skoda', 'porshe', 'bmw', 'audi', 'mercedes', false, true];
+    // for (const numStrBlElement of numStrBl) {
+    //     if (typeof numStrBlElement === "number") {
+    //         console.log(numStrBlElement);
+    //     }
+    // }
+    // - Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
+    // let ndString = [0, 12, 58, 62, 78, 'skoda', 'porshe', 'bmw', 'audi', 'mercedes', false, true];
+    // for (let ndStringElement of ndString) {
+    //     if (typeof ndStringElement === "string") {
+    //         console.log(ndStringElement);
+    //     }
+    // }
+    // - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+    // let crab = [];
+    // crab[0] = 'Peter';
+    // crab[3] = 'Slon';
+    // crab[4] = true;
+    // crab[5] = false;
+    // crab[6] = 22;
+    // crab[7] = 87;
+    // for (let cr of crab) {
+    //     console.log(cr);
+    // }
+    // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+    // for (let s = 0; s < 10; s++) {
+    //     console.log(s);
+    // }
+    // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+    // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+    // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+    // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+    //
+    //
+    //
+    // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+    // let books = [
+    //     {
+    //         title: 'Football in Your Life',
+    //         pageCount: 532,
+    //         genre: ['sport', 'football', 'ball'],
+    //         authors: [
+    //             {name: 'John', age: 25}
+    //         ]
+    //     },
+    //     {
+    //         title: 'New Times',
+    //         pageCount: 127,
+    //         genre: ['news'],
+    //         authors: [
+    //             {name: 'Lesia', age: 21},
+    //             {name: 'Richard', age: 49}
+    //         ]
+    //     },
+    //     {
+    //         title: 'Bubble Gum',
+    //         pageCount: 759,
+    //         genre: ['action', 'swap', 'frap', 'bla'],
+    //         authors: [
+    //             {name: 'Lesia', age: 21},
+    //             {name: 'Boris Johnson'}
+    //         ]
+    //     }
+    // ];
+    // -знайти наібльшу книжку.
+    // if (books[0].pageCount > books[1].pageCount && books[0].pageCount > books[2].pageCount) {
+    //     console.log(books[0].title);
+    // }
+    // else if (books[1].pageCount > books[0].pageCount && books[1].pageCount > books[2].pageCount) {
+    //     console.log(books[1].title);
+    // }
+    // else if (books[2].pageCount > books[0].pageCount && books[2].pageCount > books[1].pageCount) {
+    //     console.log(books[2].title);
+    // }
+    // - знайти книжку/ки з найдовшою назвою
+    // if (books[0].title.length > books[1].title.length && books[0].title.length > books[2].title.length) {
+    //     console.log(books[0].title);
+    // }
+    // else if (books[1].title.length > books[0].title.length && books[1].title.length > books[2].title.length) {
+    //     console.log(books[1].title);
+    // }
+    // else if (books[2].title.length > books[0].title.length && books[2].title.length > books[1].title.length) {
+    //     console.log(books[2].title);
+    // }
+    // - знайти книжку/ки з найбільшою кількістю жанрів
+    // if (books[0].genre.length > books[1].genre.length && books[0].genre.length > books[2].genre.length) {
+    //     console.log(books[0].title);
+    // }
+    // else if (books[1].genre.length > books[0].genre.length && books[1].genre.length > books[2].genre.length) {
+    //     console.log(books[1].title);
+    // }
+    // else if (books[2].genre.length > books[0].genre.length && books[2].genre.length > books[1].genre.length) {
+    //     console.log(books[2].title);
+    // }
+    // - знайти книжку/ки які писали 2 автори
+    // if (books[0].authors.length === 2) {
+    //     console.log(books[0].title);
+    // }
+    // if (books[1].authors.length === 2) {
+    //     console.log(books[1].title);
+    // }
+    // if (books[2].authors.length === 2) {
+    //     console.log(books[2].title);
+    // }
+    // - знайти книжку/ки які писав 1 автор
+    // if (books[0].authors.length === 1) {
+    //     console.log(books[0].title);
+    // }
+    // if (books[1].authors.length === 1) {
+    //     console.log(books[1].title);
+    // }
+    // if (books[2].authors.length === 1) {
+    //     console.log(books[2].title);
+    // }
+</script>
+
+</body>
+</html>
