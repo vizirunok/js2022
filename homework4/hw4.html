@@ -11,8 +11,8 @@
 <body>
     <script>
         // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
-        // for (let i = 0; i < 10; i++) {
-        //     document.write(`<div>Ukraine</div>`);
+        // for (let crab = 0; crab < 10; crab++) {
+        //     document.write(`<div>England</div>`)
         // }
         // // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
         // for (let p = 0; p < 10; p++) {
@@ -92,13 +92,13 @@
         //     },
         // ];
         // for (const product of products) {
-            document.write(`
-            <div class="product-card">
-                <h2 class="product-title">${product.title} - ${product.price}</h2>
-                 <img src="${product.image}" alt="" class="product-image">
-                 </div>
-            `);
-        }
+        //     document.write(`
+        //     <div class="product-card">
+        //         <h2 class="product-title">${product.title} - ${product.price}</h2>
+        //          <img src="${product.image}" alt="" class="product-image">
+        //          </div>
+        //     `);
+        // }
 
         // --------------------
         //     є масив
@@ -107,35 +107,35 @@
         // - користувачів зі статусом false
         // - користувачів які старші за 30 років
 
-        let users = [
-            {name: 'vasya', age: 31, status: false},
-            {name: 'petya', age: 30, status: true},
-            {name: 'kolya', age: 29, status: true},
-            {name: 'olya', age: 28, status: false},
-            {name: 'max', age: 30, status: true},
-            {name: 'anya', age: 31, status: false},
-            {name: 'oleg', age: 28, status: false},
-            {name: 'andrey', age: 29, status: true},
-            {name: 'masha', age: 30, status: true},
-            {name: 'olya', age: 31, status: false},
-            {name: 'max', age: 31, status: true}
-        ];
-        for (let user of users) {
-            if (user.status) {
-                console.log(user);
-            }
-        }
-        for (let user of users) {
-            if (!user.status) {
-                console.log(user);
-            }
-        }
-        for (let user of users) {
-            if (user.age > 30) {
-                console.log(user);
-            }
-
-        }
+        // let users = [
+        //     {name: 'vasya', age: 31, status: false},
+        //     {name: 'petya', age: 30, status: true},
+        //     {name: 'kolya', age: 29, status: true},
+        //     {name: 'olya', age: 28, status: false},
+        //     {name: 'max', age: 30, status: true},
+        //     {name: 'anya', age: 31, status: false},
+        //     {name: 'oleg', age: 28, status: false},
+        //     {name: 'andrey', age: 29, status: true},
+        //     {name: 'masha', age: 30, status: true},
+        //     {name: 'olya', age: 31, status: false},
+        //     {name: 'max', age: 31, status: true}
+        // ];
+        // for (let user of users) {
+        //     if (user.status) {
+        //         console.log(user);
+        //     }
+        // }
+        // for (let user of users) {
+        //     if (!user.status) {
+        //         console.log(user);
+        //     }
+        // }
+        // for (let user of users) {
+        //     if (user.age > 30) {
+        //         console.log(user);
+        //     }
+        //
+        // }
 
     </script>
 
