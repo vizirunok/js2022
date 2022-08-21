@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // - Знайти та вивести довижину настипних стрінгових значень
+        // str1 = 'hello world';
+        // str2 = 'lorem ipsum';
+        // str3 = 'javascript is cool';
+        //
+        // console.log(str1.length);
+        // console.log(str2.length);
+        // console.log(str3.length);
+
+        // - Перевести до великого регістру наступні стрінгові значення
+        // str1 = 'hello world';
+        // str2 = 'lorem ipsum';
+        // str3 = 'javascript is cool';
+        // console.log(str1.toUpperCase());
+        // console.log(str2.toUpperCase());
+        // console.log(str3.toUpperCase());
+
+        // - Перевести до нижнього регістру настипні стрінгові значення
+        // let str1 = 'HELLO WORLD';
+        // let str2 = 'LOREM IPSUM';
+        // let str3 = 'JAVASCRIPT IS COOL';
+        // console.log(str1.toLowerCase());
+        // console.log(str2.toLowerCase());
+        // console.log(str3.toLowerCase());
+
+
+        // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
+        // let str = ' dirty string   ';
+        // console.log(str.indexOf('d'));
+        // console.log(str.indexOf('g'));
+        // console.log(str.substring(1, 13));
+
+        // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
+        //let str = 'Ревуть воли як ясла повні';
+        // let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
+        // let str = 'Ревуть воли як ясла повні';
+        // function stringToarray(str) {
+        //     console.log(str.split(' '));
+        // }
+        // let arr = stringToarray(str);
+
+        // - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
+        // let array = [10, 8, -7, 55, 987, -1011, 0, 1050, 0];
+        // console.log(array);
+        // let string = array.map(value => value.toString());
+        // console.log(string);
+        // console.log(typeof string[0]);
+
+        // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
+        // sortNums(nums,'ascending') // [3,11,21]
+        // sortNums(nums,'descending') // [21,11,3]
+        // let nums = [11, 21, 3];
+        // const sortNums = (direction, arr) => {
+        //     if (direction === 'ascending') {
+        //         arr.sort((a, b) => a - b);
+        //     } else if (direction === 'descending') {
+        //         arr.sort((a, b) => b - a);
+        //     }
+        //     return arr;
+        // };
+        // console.log(sortNums());
+
+        // - є масив
+        // let coursesAndDurationArray = [
+        //     {title: 'JavaScript Complex', monthDuration: 5},
+        //     {title: 'Java Complex', monthDuration: 6},
+        //     {title: 'Python Complex', monthDuration: 6},
+        //     {title: 'QA Complex', monthDuration: 4},
+        //     {title: 'FullStack', monthDuration: 7},
+        //     {title: 'Frontend', monthDuration: 4}
+        // ];
+        // -- відсортувати його за спаданням за monthDuration
+        // let array1 = coursesAndDurationArray.sort((a, b) => b.monthDuration - a.monthDuration);
+        // console.log(array1);
+
+        // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
+        // let array2 = coursesAndDurationArray.filter(value => value.monthDuration > 5);
+        // console.log(array2);
+
+        // описати колоду карт
+        let cards = [
+            {name: 'hresta', color: 'black', type: 6},
+            {name: 'hresta', color: 'black', type: 7},
+            {name: 'hresta', color: 'black', type: 8},
+            {name: 'hresta', color: 'black', type: 9},
+            {name: 'hresta', color: 'black', type: 10},
+            {name: 'hresta', color: 'black', type: 'boy'},
+            {name: 'hresta', color: 'black', type: 'queen'},
+            {name: 'hresta', color: 'black', type: 'king'},
+            {name: 'hresta', color: 'black', type: 'jock'},
+            {name: 'cherva', color: 'red', type: 6},
+            {name: 'cherva', color: 'red', type: 7},
+            {name: 'cherva', color: 'red', type: 8},
+            {name: 'cherva', color: 'red', type: 9},
+            {name: 'cherva', color: 'red', type: 10},
+            {name: 'cherva', color: 'red', type: 'boy'},
+            {name: 'cherva', color: 'red', type: 'queen'},
+            {name: 'cherva', color: 'red', type: 'king'},
+            {name: 'cherva', color: 'red', type: 'jock'},
+            {name: 'pica', color: 'black', type: 6},
+            {name: 'pica', color: 'black', type: 7},
+            {name: 'pica', color: 'black', type: 8},
+            {name: 'pica', color: 'black', type: 9},
+            {name: 'pica', color: 'black', type: 10},
+            {name: 'pica', color: 'black', type: 'boy'},
+            {name: 'pica', color: 'black', type: 'queen'},
+            {name: 'pica', color: 'black', type: 'king'},
+            {name: 'pica', color: 'black', type: 'jock'},
+            {name: 'bubna', color: 'red', type: 6},
+            {name: 'bubna', color: 'red', type: 7},
+            {name: 'bubna', color: 'red', type: 8},
+            {name: 'bubna', color: 'red', type: 9},
+            {name: 'bubna', color: 'red', type: 10},
+            {name: 'bubna', color: 'red', type: 'boy'},
+            {name: 'bubna', color: 'red', type: 'queen'},
+            {name: 'bubna', color: 'red', type: 'king'},
+            {name: 'bubna', color: 'red', type: 'jock'},
+        ];
+        // {
+        //     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
+        //         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
+        //     color:'', // 'red','black'
+        // }
+
+        // - знайти піковий туз
+        // let find = cards.find(value => (value.name === 'pica' && value.type === 'jock'));
+        // console.log(find);
+
+        // - всі шістки
+        // let findNumberSix = cards.filter(value => value.type === 6);
+        // console.log(findNumberSix);
+
+        // - всі червоні карти
+        // let redCards = cards.filter(value => value.color === 'red');
+        // console.log(redCards);
+
+        // - всі буби
+        // let filterBubna = cards.filter(value => value.name === 'bubna');
+        // console.log(filterBubna);
+
+        // - всі трефи від 9 та більше
+        // let bubnaAfter9 = cards.filter(value => value.name === 'cherva' && value.type >= 9 || value.name === 'cherva' && typeof value.type === "string");
+        // console.log(bubnaAfter9);
+
+
+        // Додатково по reduce
+        // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
+        // {
+        //     spades:[],
+        //         diamonds:[],
+        //     hearts:[],
+        //     clubs:[]
+        // }
+        let reduce = cards.reduce(function (acumulator, card){
+            if (card.name==='bubna') {
+                acumulator.bubna.push(card);
+            }
+            else if (card.name === 'cherva') {
+                acumulator.cherva.push(card);
+            }
+            else if (card.name === 'hresta') {
+                acumulator.hresta.push(card);
+            }
+            else if (card.name === 'pica') {
+                acumulator.pica.push(card);
+            }
+            return acumulator;
+        }, {bubna:[], cherva:[],hresta:[],pica:[]});
+        console.log(reduce);
+    </script>
+</body>
+</html>
