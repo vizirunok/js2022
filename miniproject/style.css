@@ -1,0 +1,56 @@
+.h3 {
+    text-align: center;
+    border: 1px solid black;
+}
+a {
+    display: block;
+    background: #218b66;
+    width: 75px;
+    height: 20px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 15px;
+    text-decoration: none;
+    color: white;
+}
+.fatherDiv{
+    width: 100%;
+    background: ghostwhite;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.styleDiv{
+    width: 48%;
+    height: 100px;
+    border: 1px solid mediumpurple;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+}
+.usDiv{
+    background: ghostwhite;
+    border: 1px solid black;
+}
+.button {
+    margin-top: 75px;
+    width: 80%;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.littleDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.divP {
+    width: 17%;
+    margin: 50px 0px 50px 0px;
+
+}
+
