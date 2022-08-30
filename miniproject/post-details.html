@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <script>
@@ -17,23 +18,42 @@
     fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
         .then(value => value.json())
         .then(item=>{
+            let divB = document.createElement("div");
+            divB.classList.add("divB");
+            document.body.appendChild(divB);
+
+            let h3 = document.createElement("h3");
+            h3.classList.add("h3");
+            divB.appendChild(h3);
+            h3.innerText = "Post details";
+
             for (const itemEl in item) {
                 let div = document.createElement('div')
-                document.body.appendChild(div)
-                div.innerText = `${itemEl} - ${item[itemEl]}`
-                document.body.appendChild(div)
+                divB.appendChild(div)
+                div.innerHTML = `<b>${itemEl}</b> - ${item[itemEl]}`
+
             }
         })
     fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
         .then(value => value.json())
         .then(item => {
+            let papaDiv = document.createElement("div");
+            papaDiv.classList.add("papaDiv");
+            document.body.appendChild(papaDiv);
+
+            let h3 = document.createElement("h3");
+            h3.classList.add("h3");
+            papaDiv.appendChild(h3);
+            h3.innerText = "Comments";
+
             for (const itemElement of item) {
                 let divC = document.createElement("div");
-                document.body.appendChild(divC);
+                divC.classList.add("divC");
+                papaDiv.appendChild(divC);
                 for (const Key in itemElement) {
                     let miniDiv = document.createElement("div");
                     divC.appendChild(miniDiv);
-                    miniDiv.innerText = `${Key} : ${itemElement[Key]}`;
+                    miniDiv.innerHTML = `<b>${Key} :</b> ${itemElement[Key]}`;
                 }
             }
         })

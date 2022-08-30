@@ -1,6 +1,7 @@
+/*index*/
 .h3 {
+    width: 100%;
     text-align: center;
-    border: 1px solid black;
 }
 a {
     display: block;
@@ -32,17 +33,27 @@ a {
     align-items: center;
     margin: 10px 0px 10px 0px;
 }
+
+/*users-details*/
 .usDiv{
     background: ghostwhite;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 25px;
+    background: papayawhip;
 }
 .button {
-    margin-top: 75px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     width: 80%;
     align-items: center;
-    margin-left: 10%;
 }
-
 .littleDiv{
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +61,33 @@ a {
 }
 .divP {
     width: 17%;
+    height: 120px;
     margin: 50px 0px 50px 0px;
-
+    border: 1px solid black;
+    border-radius: 10px;
+    background: skyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+.divText{
+    height: 80px;
+}
+/*post-details*/
+.divB {
+    background: skyblue;
+    border: 1px solid black;
+}
+.papaDiv{
+    background: azure;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.divC{
+    width: 24%;
+    margin-top: 10px;
+    border: 1px solid black;
+    background: aliceblue;
+    border-radius: 5px;
+}
