@@ -37,8 +37,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             usDiv.appendChild(a);
 
             a.innerText = "Details User";
-            a.target = "_blank";
-            a.href = `user-details.html?id=${value.id}`;
+            a.href = `user-details.html?data=${JSON.stringify(value)}`;
         }
-    })
+    });
 
