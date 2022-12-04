@@ -6,7 +6,6 @@
 
 let url = new URL(location.href);
 let user = JSON.parse(url.searchParams.get('data'));
-localStorage.setItem('lasst User', JSON.stringify(user));
 
 let bodyDiv = document.createElement("div");
 document.body.appendChild(bodyDiv);
